@@ -1,14 +1,15 @@
-const nameBox = document.querySelector(".name");
+// const clickName = document.querySelector(".name");
+const openMessage = document.querySelector("#open");
 const hiddenMessage = document.querySelector(".hidden-message");
+const redCircle = document.querySelector("#red");
 
 
 
-nameBox.addEventListener ("click",() =>{
-    if(click)
-    hiddenMessage.classList.displey ="flex"
+
+openMessage.addEventListener("click", () => {
+    hiddenMessage.style.display = "flex";
+    redCircle.className.remove ("red");
+    openMessage.style.backgroundcolor = "#ffff";
 }
 )
-
-
-
 

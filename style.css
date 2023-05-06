@@ -17,6 +17,7 @@ body{
 main{
     width: 100%;
      display: grid;
+     justify-items: end;
      gap: 10px;
 }
 
@@ -67,7 +68,19 @@ main{
 
 .hidden-message{
     display: none;
+    width: 80%;
+    padding: 16px;
+    background-color: white;
+    line-height: 18px;
+    border: 2px solid;
+    border-color: #DDE7EE;
+    border-radius: 5px;
+    cursor: pointer;
 }
+.hidden-message:hover{
+    color:#DDE7EE ;
+}
+
 
 .avatar-chess{
     width: 45px;
@@ -89,9 +102,3 @@ main{
 }
 
 
-/* .message-box{
- width: 100%;
-  line-height: 20.1px;
-  margin-left: 19px;
-  margin-right: 5px;
-} */
