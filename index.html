@@ -12,86 +12,90 @@
     <title>notification-page</title>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="left">
-                <div class="noti">Notifications</div>
-                <div class="blue-number">3</div>
-            </div>
-            <div class="right">
-                <div class="mark-message">Mark all as read</div>  
-            </div>
-        </div>
-     </header>
-     <main>
-        <div class="message-container">
-            <img class="avatar" src="./assets/images/avatar-mark-webber.webp" alt="webber">
-             <div class="message-box"> 
-                <span class="name">Mark Webber</span>
-                <span class="text-box" >reacted to your recent</span>
-                <span class="text-box" >post</span>
-                <span class="text-box ; info" > My first tournament today!</span><span class="red-circle" ></span>
-                <div class="date"><span class="text-box" > 1m ago </span></div>
-            </div>
-        </div>
-        <div class="message-container" >
-            <img class="avatar"  src="./assets/images/avatar-angela-gray.webp" alt="gray">
-            <div>
-                <span class="name">Angela Gray</span>
-                <span class="text-box" >followed you</span><span class="red-circle" ></span>
-                <div class="date"><span class="text-box" > 5m ago </span></div>
-            </div>
-        </div>
-        <div class="message-container" >
-            <img  class="avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="thrompson">
-             <div>
-                <span class="name">Jacob Thompson</span>
-                <span class="text-box" >has joined your group</span>
-                <span class="text-box" > group</span>
-                <span class="text-box; info">Chess Club</span><span class="red-circle" ></span>
-                <div class="date"><span class="text-box" > 5 days ago </span></div>
-            </div>
-        </div>
-        <div class="message-container" id="open" >
-            <img class="avatar"  src="./assets/images/avatar-rizky-hasanuddin.webp" alt="hasanuddin">
-            <div class="new-message">
-                <span class="name">Rizky Hasanuddin</span>
-                <span class="text-box" >sent you a private message</span><span class="red-circle" id="red"></span>
-                <div class="date"><span class="text-box" > 5 days ago </span></div>
-            </div> 
-        </div>
-        <div class="hidden-message" >Hello, thanks for setting up the Chess Club. I’ve been a member for a few weeks now and I’m already having lots of fun and improving my game.</div>
-        <div class="message-container" >
-            <img  class="avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="smith">
-            <div>
-                <span class="name">Kimberly Smith</span>
-                <span class="text-box" >commented on your picture</span><span class="red-circle" ></span>
-                <div class="date"><span class="text-box" > 1 weeks ago </span></div>
-            </div>
-             <div>
-                <img class="avatar-chess" src="./assets/images/image-chess.webp" alt="images">
-             </div>
-            </div>
-            <div class="message-container" >
-                <img  class="avatar" src="./assets/images/avatar-nathan-peterson.webp" alt="peterson">
-                <div>
-                    <span class="name">Nathan Peterson</span>
-                    <span class="text-box" >reacted to your recent post</span>
-                    <span class="text-box; info" >5 end-game strategies to</span>
-                    <span class="text-box; info" >increase your win rate</span><span class="red-circle" ></span>
-                    <div class="date"><span class="text-box" > 1weeks ago </span></div>
+    <div class="card-container">
+        <header>
+            <div class="header-container">
+                <div class="left">
+                    <div class="noti">Notifications</div>
+                    <div class="blue-number">3</div>
+                </div>
+                <div class="right">
+                    <div class="mark-message">Mark all as read</div>  
                 </div>
             </div>
-            <div class="message-container" >
-                <img  class="avatar" src="./assets/images/avatar-anna-kim.webp" alt="kim">
-                <div>
-                    <span class="name">Anna Kim</span>
-                    <span class="text-box" >left the group</span>
-                    <span class="text-box; info" >Chess Club</span><span class="red-circle" ></span>
-                    <div class="date"><span class="text-box" > 2weeks ago </span></div>
+        </header>
+        <main>
+            <div class="message-container" id="weberr">
+                <img class="avatar" src="./assets/images/avatar-mark-webber.webp" alt="webber">
+                <div class="message-box"> 
+                    <span class="name">Mark Webber</span>
+                    <span class="text-box" >reacted to your recent</span>
+                    <span class="text-box" >post</span>
+                    <span class="text-box ; info" > My first tournament today!</span><span class="red-circle" id="red-one" ></span>
+                    <div class="date"><span class="text-box" > 1m ago </span></div>
                 </div>
             </div>
-     </main>
+            <div class="message-container" id="grey" >
+                <img class="avatar"  src="./assets/images/avatar-angela-gray.webp" alt="gray">
+                <div>
+                    <span class="name">Angela Gray</span>
+                    <span class="text-box" >followed you</span><span class="red-circle" id="red-two" ></span>
+                    <div class="date"><span class="text-box" > 5m ago </span></div>
+                </div>
+            </div>
+            <div class="message-container" id="Thompson">
+                <img  class="avatar" src="./assets/images/avatar-jacob-thompson.webp" alt="thrompson">
+                <div>
+                    <span class="name">Jacob Thompson</span>
+                    <span class="text-box" >has joined your group</span>
+                    <span class="text-box" > group</span>
+                    <span class="text-box; info">Chess Club</span><span class="red-circle" id="red-three" ></span>
+                    <div class="date"><span class="text-box" > 5 days ago </span></div>
+                </div>
+            </div>
+            <div class="message-container" id="open" >
+                <img class="avatar"  src="./assets/images/avatar-rizky-hasanuddin.webp" alt="hasanuddin">
+                <div class="new-message">
+                    <span class="name">Rizky Hasanuddin</span>
+                    <span class="text-box" >sent you a private message</span><span class="red-circle" id="red"></span>
+                    <div class="date"><span class="text-box" > 5 days ago </span></div>
+                </div> 
+            </div>
+            <div class="hidden-message" >Hello, thanks for setting up the Chess Club. I’ve been a member for a few weeks now and I’m already having lots of fun and improving my game.</div>
+            <div class="message-container"  id="Smith">
+                <div class="avtor-text">
+                    <img  class="avatar" src="./assets/images/avatar-kimberly-smith.webp" alt="smith">
+                    <div>
+                        <span class="name">Kimberly Smith</span>
+                        <span class="text-box" >commented on your picture</span><span class="red-circle" id="red-four"></span>
+                        <div class="date"><span class="text-box" > 1 weeks ago </span></div>
+                    </div>
+                </div>
+                <div>
+                    <img class="avatar-chess" src="./assets/images/image-chess.webp" alt="images">
+                </div>
+                </div>
+                <div class="message-container" id="Peterson" >
+                    <img  class="avatar" src="./assets/images/avatar-nathan-peterson.webp" alt="peterson">
+                    <div>
+                        <span class="name">Nathan Peterson</span>
+                        <span class="text-box" >reacted to your recent post</span>
+                        <span class="text-box; info" >5 end-game strategies to</span>
+                        <span class="text-box; info" >increase your win rate</span><span class="red-circle" id="red-five"></span>
+                        <div class="date"><span class="text-box" > 1weeks ago </span></div>
+                    </div>
+                </div>
+                <div class="message-container" id="kim">
+                    <img  class="avatar" src="./assets/images/avatar-anna-kim.webp" alt="kim">
+                    <div>
+                        <span class="name">Anna Kim</span>
+                        <span class="text-box" >left the group</span>
+                        <span class="text-box; info" >Chess Club</span><span class="red-circle" id="red-six"></span>
+                        <div class="date"><span class="text-box" > 2weeks ago </span></div>
+                    </div>
+                </div>
+        </main>
+        </div>
      <script src="./script.js"></script>
 </body>
 </html>

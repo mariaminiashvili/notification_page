@@ -7,16 +7,23 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: "Plus Jakarta Sans" ;
     font-weight: 500;
     font-size: 14px;
     color: #5E6778;
-    padding: 30px;
+    padding: 15px;
+    background-color:#F2F2F2 ;
+}
+
+header{
+    width: 100%;
 }
 
 .header-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 31px;
 }
@@ -30,6 +37,7 @@ body{
 .left{
     display: flex;
     flex-direction: row;
+    gap:13px
 }
 
 .right{
@@ -50,10 +58,23 @@ body{
 }
 
 .mark-message{
-    font-size: 17px;
     font-weight: 500;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.mark-message:hover{
+    color: #0A327B;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 30px;
 }
 
 main{
@@ -69,6 +90,7 @@ main{
     font-size: 16px;
     cursor: pointer;
 }
+
 .name:hover{
     color: #0A327B;
 }
@@ -76,14 +98,11 @@ main{
 .info{
     font-weight: 800;
     color: #5E6778;
+    cursor: pointer;
 }
 
 .info:hover{
     color: #0A327B;
-}
-
-.text-box{
-    cursor: pointer;
 }
 
 .date{
@@ -119,14 +138,28 @@ main{
     border-radius: 5px;
     cursor: pointer;
 }
-.hidden-message:hover{
-    color:#DDE7EE ;
-}
 
+.hidden-message:hover{
+   background-color:#DDE7EE;
+   color: #5E6778;
+}
 
 .avatar-chess{
     width: 45px;
     height: 45px;
+    cursor: pointer;
+}
+
+.avtor-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:13px;
+}
+
+#Smith{
+    display: flex;
+    justify-content: space-between;
 }
 
 .red-circle{
@@ -136,11 +169,30 @@ main{
     background-color: #F65552;
     border-radius: 50%;
     margin: 5px;
-
 }
 
 .time{
     height: 20px;
 }
 
+@media screen and (min-width:768px){
+     body{
+        font-size: 16px;
+    }
 
+    .card-container{
+        width: 730px;
+    }
+
+    main{
+        width: 630px;
+    }
+    
+    header{
+        width: 670px;
+    }
+
+    .hidden-message{
+        line-height: 20px;
+    }
+}
